@@ -1,0 +1,30 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+	I can see the differences time and person related, that helps to find the last change that could resulted the bug.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+	Because I can see what changes are made on this document and with a good comment I know 
+	the purpose of the change. If I know who did the changes I could ask him for more Information.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, 
+vs having versions automatically saved, like Google Docs does?
+	A manually choosing commit makes the history of changes easier to read in feature, if you have a wisely
+	selected change with a comment.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, 
+like Google Docs, treat each file separately?
+	Google Docs is document oriented and usualy a change in a document does not affect others. But as programmer you working with code
+	and resulted by the concept to avoid redundant code (Libaries, Object oriented etc.) it could happen if we change function call
+	that we have to change to callers, too. To track changes over multiple files improves clarity a lot.
+
+How can you use the commands git log and git diff to view the history of files?
+	- git log
+	- git log --grep "Revert controls" --pretty=format:"%s, %H - %P"
+	- git diff f19cb1b80fe27e938e4d72770ca0a42f25e99ecc b0678b161fcf74467ed3a63110557e3d6229cfa6
+
+How might using version control make you more confident to make changes that could break something?
+	Resulted by the history of version control it is possible to rollback to old versions, that can speed up to find the source
+	of problem.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+	First I have to say Git is not very user friendly in compare to Microsoft TFS. I hope I will found an usefull integration
+	for Android Studio.
